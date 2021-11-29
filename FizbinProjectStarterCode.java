@@ -38,6 +38,10 @@ class TheTable {
 	}
 
 	public void GenerateTheCardDeck() {
+		// when we implemented this method: we had not yet made our rules for the values of the CARDS
+		// we need to create an implementation of this method that reflects the Rules in 
+		// our Requirements: Assessing the VALUE of a HAND in Fizbin Excel Sheet								
+
 			for (int suiteNumber = 0; suiteNumber < suites.length; suiteNumber++) {
 				populateTheDeck(suiteNumber);
 			}
@@ -72,8 +76,18 @@ class Card {
 
 	private String suite;
 	private String cardvalue;
-
+	// #TODO: Add to the this Class a VALUE Data Attribute 
+	// set the VALUE of this Card based on Suite and Card Value
+	
 	public String toString() {
 		return this.suite + " " + this.cardvalue;
 	}
 }
+
+class Player{
+	 
+	String PlayerName;
+	
+	
+}
+
